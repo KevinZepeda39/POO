@@ -3,7 +3,6 @@ import javax.swing.JOptionPane;
 
 public class Ejercicio4 {
     public static void main(String[] args) {
-        // Primera y segunda cadena de texto brindada por usuario
         String primernumero;
         String segundonumero;
         int numero1, numero2;
@@ -15,7 +14,6 @@ public class Ejercicio4 {
         numero1 = Integer.parseInt(primernumero);
         numero2 = Integer.parseInt(segundonumero);
 
-        // Validación de números negativos
         if (numero1 < 0 || numero2 < 0) {
             JOptionPane.showMessageDialog(null,
                     "No se pueden ingresar números negativos",

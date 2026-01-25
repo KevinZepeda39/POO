@@ -12,7 +12,7 @@ public class Ejercicio5 {
 
         if (!datosValidos(c1, c2, c3)) {
             JOptionPane.showMessageDialog(null,
-                    "No ingresó un valor apropiado.\nEl programa finalizará.",
+                    "No ingresaste un valor apropiado.\nEl programa se muere.",
                     "Error", JOptionPane.ERROR_MESSAGE);
             return;
         }
@@ -23,7 +23,6 @@ public class Ejercicio5 {
         mostrarResultados(c1, c2, c3, serie, paralelo);
     }
 
-    // ===== ENTRADA =====
     public static double solicitarCapacitor(String mensaje) {
         String valor = JOptionPane.showInputDialog(mensaje);
 
@@ -34,12 +33,10 @@ public class Ejercicio5 {
         return Double.parseDouble(valor);
     }
 
-    // ===== VALIDACIÓN =====
     public static boolean datosValidos(double c1, double c2, double c3) {
         return c1 > 0 && c2 > 0 && c3 > 0;
     }
 
-    // ===== CÁLCULOS =====
     public static double calcularSerie(double c1, double c2, double c3) {
         return 1 / ((1 / c1) + (1 / c2) + (1 / c3));
     }
@@ -48,7 +45,6 @@ public class Ejercicio5 {
         return c1 + c2 + c3;
     }
 
-    // ===== SALIDA =====
     public static void mostrarResultados(double c1, double c2, double c3,
                                          double serie, double paralelo) {
 

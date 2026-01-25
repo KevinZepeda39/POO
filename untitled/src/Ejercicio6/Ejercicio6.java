@@ -4,8 +4,7 @@ import java.util.Scanner;
 
 public class Ejercicio6 {
 
-    // Constante permitida
-    public static final double DENSIDAD_GASOLINA = 750.0; // kg/m³
+    public static final double DENSIDAD_GASOLINA = 750.0;
 
     public static void main(String[] args) {
 
@@ -18,7 +17,6 @@ public class Ejercicio6 {
         imprimirResultados(dieselLitros, gasolinaKg);
     }
 
-    // ===== MÉTODOS DE ENTRADA =====
 
     public static double solicitarRadio() {
         Scanner sc = new Scanner(System.in);
@@ -32,7 +30,6 @@ public class Ejercicio6 {
         return sc.nextDouble();
     }
 
-    // ===== MÉTODOS DE CÁLCULO =====
 
     public static double calcularDieselLitros(double r, double h) {
         double volumenM3 = Math.PI * r * r * h;
@@ -43,8 +40,6 @@ public class Ejercicio6 {
         double volumenM3 = Math.PI * r * r * h;
         return volumenM3 * DENSIDAD_GASOLINA; // kg
     }
-
-    // ===== MÉTODO DE SALIDA =====
 
     public static void imprimirResultados(double diesel, double gasolina) {
         System.out.println("\n--- RESULTADOS ---");
